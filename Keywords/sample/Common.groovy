@@ -26,6 +26,6 @@ public class Common {
 
 	@Keyword
 	def static void findUserById(int id, int age, String username, String password, String gender, int expectedStatus) {
-		WS.sendRequestAndVerify(findTestObject('Object Repository/GET user by id', [('id') : id]))
+		WS.sendRequestAndVerify(findTestObject('Object Repository/GET Companies', [('id') : id]))
 	}
 }

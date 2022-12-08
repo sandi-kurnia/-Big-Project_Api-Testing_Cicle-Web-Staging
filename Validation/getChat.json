@@ -1,0 +1,106 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "required": [
+        "message",
+        "groupChat"
+    ],
+    "properties": {
+        "message": {
+            "type": "string",
+            "default": ""
+        },
+        "groupChat": {
+            "type": "object",
+            "default": {},
+            "required": [
+                "_id",
+                "messages",
+                "attachments",
+                "createdAt",
+                "updatedAt",
+                "__v"
+            ],
+            "properties": {
+                "_id": {
+                    "type": "string",
+                    "default": ""
+                },
+                "messages": {
+                    "type": "array",
+                    "default": [],
+                    "items": {
+                        "type": "object",
+                        "required": [
+                            "_id",
+                            "content",
+                            "creator",
+                            "isDeleted",
+                            "createdAt",
+                            "updatedAt",
+                            "__v"
+                        ],
+                        "properties": {
+                            "_id": {
+                                "type": "string"
+                            },
+                            "content": {
+                                "type": "string"
+                            },
+                            "creator": {
+                                "type": "object",
+                                "required": [
+                                    "_id",
+                                    "fullName",
+                                    "photoUrl"
+                                ],
+                                "properties": {
+                                    "_id": {
+                                        "type": "string"
+                                    },
+                                    "fullName": {
+                                        "type": "string"
+                                    },
+                                    "photoUrl": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "isDeleted": {
+                                "type": "boolean"
+                            },
+                            "createdAt": {
+                                "type": "string"
+                            },
+                            "updatedAt": {
+                                "type": "string"
+                            },
+                            "__v": {
+                                "type": "integer"
+                            }
+                        }
+                    }
+                },
+                "attachments": {
+                    "type": "array",
+                    "default": [],
+                    "items": {}
+                },
+                "createdAt": {
+                    "type": "string",
+                    "default": ""
+                },
+                "updatedAt": {
+                    "type": "string",
+                    "default": ""
+                },
+                "__v": {
+                    "type": "integer",
+                    "default": 0
+                }
+            }
+        }
+    }
+}

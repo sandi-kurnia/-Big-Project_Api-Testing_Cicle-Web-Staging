@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Get All By User Company</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d89897e0-c2a4-4d03-87f1-5b5ad197a3b1</testCaseGuid>
+</TestCaseEntity>

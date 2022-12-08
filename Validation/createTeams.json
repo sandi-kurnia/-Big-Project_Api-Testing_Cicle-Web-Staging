@@ -1,0 +1,111 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "required": [
+        "newTeam"
+    ],
+    "properties": {
+        "newTeam": {
+            "type": "object",
+            "default": {},
+            "required": [
+                "archived",
+                "_id",
+                "name",
+                "desc",
+                "members",
+                "boards",
+                "type",
+                "createdAt",
+                "updatedAt",
+                "__v",
+                "blast",
+                "bucket",
+                "checkIn",
+                "groupChat",
+                "schedule"
+            ],
+            "properties": {
+                "archived": {
+                    "type": "object",
+                    "default": {},
+                    "required": [
+                        "status"
+                    ],
+                    "properties": {
+                        "status": {
+                            "type": "boolean",
+                            "default": false
+                        }
+                    }
+                },
+                "_id": {
+                    "type": "string",
+                    "default": ""
+                },
+                "name": {
+                    "type": "string",
+                    "default": ""
+                },
+                "desc": {
+                    "type": "string",
+                    "default": ""
+                },
+                "members": {
+                    "type": "array",
+                    "default": [],
+                    "items": {
+                        "type": "string",
+                        "default": ""
+                    }
+                },
+                "boards": {
+                    "type": "array",
+                    "default": [],
+                    "items": {
+                        "type": "string",
+                        "default": ""
+                    }
+                },
+                "type": {
+                    "type": "string",
+                    "default": ""
+                },
+                "createdAt": {
+                    "type": "string",
+                    "default": ""
+                },
+                "updatedAt": {
+                    "type": "string",
+                    "default": ""
+                },
+                "__v": {
+                    "type": "integer",
+                    "default": 0
+                },
+                "blast": {
+                    "type": "string",
+                    "default": ""
+                },
+                "bucket": {
+                    "type": "string",
+                    "default": ""
+                },
+                "checkIn": {
+                    "type": "string",
+                    "default": ""
+                },
+                "groupChat": {
+                    "type": "string",
+                    "default": ""
+                },
+                "schedule": {
+                    "type": "string",
+                    "default": ""
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Create Teams with valid company ID</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1ecd7636-7602-408a-aee1-fdcd8fdee027</testCaseGuid>
+</TestCaseEntity>

@@ -6,17 +6,12 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://sample-web-service-aut.herokuapp.com'</initValue>
-      <name>baseUrl</name>
+      <initValue>'https://stagingapi.cicle.app/api/v1'</initValue>
+      <name>base_Url</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>200</initValue>
-      <name>successCode</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>0</initValue>
-      <name>globalId</name>
+      <initValue>'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYzM2ZkZGQzNjRhYTNmYjE4YWJiNGJjNCIsImdvb2dsZUlkIjoiMTAxNTY3OTQ0MzIzMTk2MTQ1MjczIiwiZW1haWwiOiJzYW5kaWt1cm5pYXNxYUBnbWFpbC5jb20iLCJmdWxsTmFtZSI6IlNhbmRpIEt1cm5pYSIsInBob3RvVXJsIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUxtNXd1MFpPSGhvcVo5X2lSWEM0MEg4SUZjNkxfNF84bUZQMFBRdUlXSTY9czk2LWMiLCJiaW8iOiIiLCJzdGF0dXMiOiIiLCJjcmVhdGVkQXQiOiIyMDIyLTEwLTA3VDA4OjA1OjM5LjA4MVoiLCJ1cGRhdGVkQXQiOiIyMDIyLTExLTExVDA0OjU1OjQ0Ljc5NVoiLCJfX3YiOjAsImRlZmF1bHRDb21wYW55IjpudWxsfSwiaWF0IjoxNjY4MTQ1NzE4LCJleHAiOjE2NzA3Mzc3MTh9.AqB3qrua5Vf6b04o63xa04UhrvZTqEr2RTM-KjIqSx0'</initValue>
+      <name>token</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

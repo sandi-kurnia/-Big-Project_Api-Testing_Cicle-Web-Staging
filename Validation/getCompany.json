@@ -1,0 +1,520 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "companies"
+    ],
+    "properties": {
+        "companies": {
+            "type": "array",
+            "default": [],
+            "title": "The companies Schema",
+            "items": {
+                "type": "object",
+                "title": "A Schema",
+                "required": [
+                    "workloadCapacityDefault",
+                    "_id",
+                    "name",
+                    "desc",
+                    "logo",
+                    "admins",
+                    "membersJoined",
+                    "members",
+                    "teams",
+                    "createdAt",
+                    "updatedAt",
+                    "__v"
+                ],
+                "properties": {
+                    "workloadCapacityDefault": {
+                        "type": "object",
+                        "title": "The workloadCapacityDefault Schema",
+                        "required": [
+                            "value",
+                            "measurement"
+                        ],
+                        "properties": {
+                            "value": {
+                                "type": "integer",
+                                "title": "The value Schema",
+                                "examples": [
+                                    7
+                                ]
+                            },
+                            "measurement": {
+                                "type": "string",
+                                "title": "The measurement Schema",
+                                "examples": [
+                                    "Hours"
+                                ]
+                            }
+                        },
+                        "examples": [{
+                            "value": 7,
+                            "measurement": "Hours"
+                        },
+                        {
+                            "value": 7,
+                            "measurement": "Hours"
+                        }]
+                    },
+                    "_id": {
+                        "type": "string",
+                        "title": "The _id Schema",
+                        "examples": [
+                            "636dd42e609ac90f8426c03f",
+                            "636dd4f8609ac90f8426c142"
+                        ]
+                    },
+                    "name": {
+                        "type": "string",
+                        "title": "The name Schema",
+                        "examples": [
+                            "PT Semoga Sukses Selalu "
+                        ]
+                    },
+                    "desc": {
+                        "type": "string",
+                        "title": "The desc Schema",
+                        "examples": [
+                            "Selamat Mengerjakan Big Project"
+                        ]
+                    },
+                    "logo": {
+                        "type": "string",
+                        "title": "The logo Schema",
+                        "examples": [
+                            "/public/images/company-default.png"
+                        ]
+                    },
+                    "admins": {
+                        "type": "array",
+                        "title": "The admins Schema",
+                        "items": {
+                            "type": "object",
+                            "title": "A Schema",
+                            "required": [
+                                "_id",
+                                "fullName",
+                                "photoUrl"
+                            ],
+                            "properties": {
+                                "_id": {
+                                    "type": "string",
+                                    "title": "The _id Schema",
+                                    "examples": [
+                                        "633fddd364aa3fb18abb4bc4"
+                                    ]
+                                },
+                                "fullName": {
+                                    "type": "string",
+                                    "title": "The fullName Schema",
+                                    "examples": [
+                                        "Sandi Kurnia"
+                                    ]
+                                },
+                                "photoUrl": {
+                                    "type": "string",
+                                    "title": "The photoUrl Schema",
+                                    "examples": [
+                                        "https://lh3.googleusercontent.com/a/ALm5wu0ZOHhoqZ9_iRXC40H8IFc6L_4_8mFP0PQuIWI6=s96-c"
+                                    ]
+                                }
+                            },
+                            "examples": [{
+                                "_id": "633fddd364aa3fb18abb4bc4",
+                                "fullName": "Sandi Kurnia",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0ZOHhoqZ9_iRXC40H8IFc6L_4_8mFP0PQuIWI6=s96-c"
+                            },
+                            {
+                                "_id": "633fddd364aa3fb18abb4bc4",
+                                "fullName": "Sandi Kurnia",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0ZOHhoqZ9_iRXC40H8IFc6L_4_8mFP0PQuIWI6=s96-c"
+                            }]
+                        },
+                        "examples": [
+                            [{
+                                "_id": "633fddd364aa3fb18abb4bc4",
+                                "fullName": "Sandi Kurnia",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0ZOHhoqZ9_iRXC40H8IFc6L_4_8mFP0PQuIWI6=s96-c"
+                            }],
+                            [{
+                                "_id": "633fddd364aa3fb18abb4bc4",
+                                "fullName": "Sandi Kurnia",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0ZOHhoqZ9_iRXC40H8IFc6L_4_8mFP0PQuIWI6=s96-c"
+                            }]
+                        ]
+                    },
+                    "membersJoined": {
+                        "type": "array",
+                        "title": "The membersJoined Schema",
+                        "items": {
+                            "type": "object",
+                            "title": "A Schema",
+                            "required": [
+                                "member",
+                                "joinedAt",
+                                "_id"
+                            ],
+                            "properties": {
+                                "member": {
+                                    "type": "string",
+                                    "title": "The member Schema",
+                                    "examples": [
+                                        "633fddd364aa3fb18abb4bc4"
+                                    ]
+                                },
+                                "joinedAt": {
+                                    "type": "string",
+                                    "title": "The joinedAt Schema",
+                                    "examples": [
+                                        "2022-11-11T04:48:46.219Z",
+                                        "2022-11-11T04:52:08.504Z"
+                                    ]
+                                },
+                                "_id": {
+                                    "type": "string",
+                                    "title": "The _id Schema",
+                                    "examples": [
+                                        "636dd42e609ac90f8426c040",
+                                        "636dd4f8609ac90f8426c143"
+                                    ]
+                                }
+                            },
+                            "examples": [{
+                                "member": "633fddd364aa3fb18abb4bc4",
+                                "joinedAt": "2022-11-11T04:48:46.219Z",
+                                "_id": "636dd42e609ac90f8426c040"
+                            },
+                            {
+                                "member": "633fddd364aa3fb18abb4bc4",
+                                "joinedAt": "2022-11-11T04:52:08.504Z",
+                                "_id": "636dd4f8609ac90f8426c143"
+                            }]
+                        },
+                        "examples": [
+                            [{
+                                "member": "633fddd364aa3fb18abb4bc4",
+                                "joinedAt": "2022-11-11T04:48:46.219Z",
+                                "_id": "636dd42e609ac90f8426c040"
+                            }],
+                            [{
+                                "member": "633fddd364aa3fb18abb4bc4",
+                                "joinedAt": "2022-11-11T04:52:08.504Z",
+                                "_id": "636dd4f8609ac90f8426c143"
+                            }]
+                        ]
+                    },
+                    "members": {
+                        "type": "array",
+                        "title": "The members Schema",
+                        "items": {
+                            "type": "object",
+                            "title": "A Schema",
+                            "required": [
+                                "_id",
+                                "fullName",
+                                "photoUrl",
+                                "bio",
+                                "status"
+                            ],
+                            "properties": {
+                                "_id": {
+                                    "type": "string",
+                                    "title": "The _id Schema",
+                                    "examples": [
+                                        "633fddd364aa3fb18abb4bc4"
+                                    ]
+                                },
+                                "fullName": {
+                                    "type": "string",
+                                    "title": "The fullName Schema",
+                                    "examples": [
+                                        "Sandi Kurnia"
+                                    ]
+                                },
+                                "photoUrl": {
+                                    "type": "string",
+                                    "title": "The photoUrl Schema",
+                                    "examples": [
+                                        "https://lh3.googleusercontent.com/a/ALm5wu0ZOHhoqZ9_iRXC40H8IFc6L_4_8mFP0PQuIWI6=s96-c"
+                                    ]
+                                },
+                                "bio": {
+                                    "type": "string",
+                                    "title": "The bio Schema",
+                                    "examples": [
+                                        ""
+                                    ]
+                                },
+                                "status": {
+                                    "type": "string",
+                                    "title": "The status Schema",
+                                    "examples": [
+                                        ""
+                                    ]
+                                }
+                            },
+                            "examples": [{
+                                "_id": "633fddd364aa3fb18abb4bc4",
+                                "fullName": "Sandi Kurnia",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0ZOHhoqZ9_iRXC40H8IFc6L_4_8mFP0PQuIWI6=s96-c",
+                                "bio": "",
+                                "status": ""
+                            },
+                            {
+                                "_id": "633fddd364aa3fb18abb4bc4",
+                                "fullName": "Sandi Kurnia",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0ZOHhoqZ9_iRXC40H8IFc6L_4_8mFP0PQuIWI6=s96-c",
+                                "bio": "",
+                                "status": ""
+                            }]
+                        },
+                        "examples": [
+                            [{
+                                "_id": "633fddd364aa3fb18abb4bc4",
+                                "fullName": "Sandi Kurnia",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0ZOHhoqZ9_iRXC40H8IFc6L_4_8mFP0PQuIWI6=s96-c",
+                                "bio": "",
+                                "status": ""
+                            }],
+                            [{
+                                "_id": "633fddd364aa3fb18abb4bc4",
+                                "fullName": "Sandi Kurnia",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0ZOHhoqZ9_iRXC40H8IFc6L_4_8mFP0PQuIWI6=s96-c",
+                                "bio": "",
+                                "status": ""
+                            }]
+                        ]
+                    },
+                    "teams": {
+                        "type": "array",
+                        "title": "The teams Schema",
+                        "items": {},
+                        "examples": [
+                            [],
+                            []
+                        ]
+                    },
+                    "createdAt": {
+                        "type": "string",
+                        "title": "The createdAt Schema",
+                        "examples": [
+                            "2022-11-11T04:48:46.222Z",
+                            "2022-11-11T04:52:08.506Z"
+                        ]
+                    },
+                    "updatedAt": {
+                        "type": "string",
+                        "title": "The updatedAt Schema",
+                        "examples": [
+                            "2022-11-11T04:48:46.222Z",
+                            "2022-11-11T04:52:08.506Z"
+                        ]
+                    },
+                    "__v": {
+                        "type": "integer",
+                        "title": "The __v Schema",
+                        "examples": [
+                            0
+                        ]
+                    }
+                },
+                "examples": [{
+                    "workloadCapacityDefault": {
+                        "value": 7,
+                        "measurement": "Hours"
+                    },
+                    "_id": "636dd42e609ac90f8426c03f",
+                    "name": "PT Semoga Sukses Selalu ",
+                    "desc": "Selamat Mengerjakan Big Project",
+                    "logo": "/public/images/company-default.png",
+                    "admins": [{
+                        "_id": "633fddd364aa3fb18abb4bc4",
+                        "fullName": "Sandi Kurnia",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0ZOHhoqZ9_iRXC40H8IFc6L_4_8mFP0PQuIWI6=s96-c"
+                    }],
+                    "membersJoined": [{
+                        "member": "633fddd364aa3fb18abb4bc4",
+                        "joinedAt": "2022-11-11T04:48:46.219Z",
+                        "_id": "636dd42e609ac90f8426c040"
+                    }],
+                    "members": [{
+                        "_id": "633fddd364aa3fb18abb4bc4",
+                        "fullName": "Sandi Kurnia",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0ZOHhoqZ9_iRXC40H8IFc6L_4_8mFP0PQuIWI6=s96-c",
+                        "bio": "",
+                        "status": ""
+                    }],
+                    "teams": [],
+                    "createdAt": "2022-11-11T04:48:46.222Z",
+                    "updatedAt": "2022-11-11T04:48:46.222Z",
+                    "__v": 0
+                },
+                {
+                    "workloadCapacityDefault": {
+                        "value": 7,
+                        "measurement": "Hours"
+                    },
+                    "_id": "636dd4f8609ac90f8426c142",
+                    "name": "PT Semoga Sukses Selalu ",
+                    "desc": "Selamat Mengerjakan Big Project",
+                    "logo": "/public/images/company-default.png",
+                    "admins": [{
+                        "_id": "633fddd364aa3fb18abb4bc4",
+                        "fullName": "Sandi Kurnia",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0ZOHhoqZ9_iRXC40H8IFc6L_4_8mFP0PQuIWI6=s96-c"
+                    }],
+                    "membersJoined": [{
+                        "member": "633fddd364aa3fb18abb4bc4",
+                        "joinedAt": "2022-11-11T04:52:08.504Z",
+                        "_id": "636dd4f8609ac90f8426c143"
+                    }],
+                    "members": [{
+                        "_id": "633fddd364aa3fb18abb4bc4",
+                        "fullName": "Sandi Kurnia",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0ZOHhoqZ9_iRXC40H8IFc6L_4_8mFP0PQuIWI6=s96-c",
+                        "bio": "",
+                        "status": ""
+                    }],
+                    "teams": [],
+                    "createdAt": "2022-11-11T04:52:08.506Z",
+                    "updatedAt": "2022-11-11T04:52:08.506Z",
+                    "__v": 0
+                }]
+            },
+            "examples": [
+                [{
+                    "workloadCapacityDefault": {
+                        "value": 7,
+                        "measurement": "Hours"
+                    },
+                    "_id": "636dd42e609ac90f8426c03f",
+                    "name": "PT Semoga Sukses Selalu ",
+                    "desc": "Selamat Mengerjakan Big Project",
+                    "logo": "/public/images/company-default.png",
+                    "admins": [{
+                        "_id": "633fddd364aa3fb18abb4bc4",
+                        "fullName": "Sandi Kurnia",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0ZOHhoqZ9_iRXC40H8IFc6L_4_8mFP0PQuIWI6=s96-c"
+                    }],
+                    "membersJoined": [{
+                        "member": "633fddd364aa3fb18abb4bc4",
+                        "joinedAt": "2022-11-11T04:48:46.219Z",
+                        "_id": "636dd42e609ac90f8426c040"
+                    }],
+                    "members": [{
+                        "_id": "633fddd364aa3fb18abb4bc4",
+                        "fullName": "Sandi Kurnia",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0ZOHhoqZ9_iRXC40H8IFc6L_4_8mFP0PQuIWI6=s96-c",
+                        "bio": "",
+                        "status": ""
+                    }],
+                    "teams": [],
+                    "createdAt": "2022-11-11T04:48:46.222Z",
+                    "updatedAt": "2022-11-11T04:48:46.222Z",
+                    "__v": 0
+                },
+                {
+                    "workloadCapacityDefault": {
+                        "value": 7,
+                        "measurement": "Hours"
+                    },
+                    "_id": "636dd4f8609ac90f8426c142",
+                    "name": "PT Semoga Sukses Selalu ",
+                    "desc": "Selamat Mengerjakan Big Project",
+                    "logo": "/public/images/company-default.png",
+                    "admins": [{
+                        "_id": "633fddd364aa3fb18abb4bc4",
+                        "fullName": "Sandi Kurnia",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0ZOHhoqZ9_iRXC40H8IFc6L_4_8mFP0PQuIWI6=s96-c"
+                    }],
+                    "membersJoined": [{
+                        "member": "633fddd364aa3fb18abb4bc4",
+                        "joinedAt": "2022-11-11T04:52:08.504Z",
+                        "_id": "636dd4f8609ac90f8426c143"
+                    }],
+                    "members": [{
+                        "_id": "633fddd364aa3fb18abb4bc4",
+                        "fullName": "Sandi Kurnia",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0ZOHhoqZ9_iRXC40H8IFc6L_4_8mFP0PQuIWI6=s96-c",
+                        "bio": "",
+                        "status": ""
+                    }],
+                    "teams": [],
+                    "createdAt": "2022-11-11T04:52:08.506Z",
+                    "updatedAt": "2022-11-11T04:52:08.506Z",
+                    "__v": 0
+                }]
+            ]
+        }
+    },
+    "examples": [{
+        "companies": [{
+            "workloadCapacityDefault": {
+                "value": 7,
+                "measurement": "Hours"
+            },
+            "_id": "636dd42e609ac90f8426c03f",
+            "name": "PT Semoga Sukses Selalu ",
+            "desc": "Selamat Mengerjakan Big Project",
+            "logo": "/public/images/company-default.png",
+            "admins": [{
+                "_id": "633fddd364aa3fb18abb4bc4",
+                "fullName": "Sandi Kurnia",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0ZOHhoqZ9_iRXC40H8IFc6L_4_8mFP0PQuIWI6=s96-c"
+            }],
+            "membersJoined": [{
+                "member": "633fddd364aa3fb18abb4bc4",
+                "joinedAt": "2022-11-11T04:48:46.219Z",
+                "_id": "636dd42e609ac90f8426c040"
+            }],
+            "members": [{
+                "_id": "633fddd364aa3fb18abb4bc4",
+                "fullName": "Sandi Kurnia",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0ZOHhoqZ9_iRXC40H8IFc6L_4_8mFP0PQuIWI6=s96-c",
+                "bio": "",
+                "status": ""
+            }],
+            "teams": [],
+            "createdAt": "2022-11-11T04:48:46.222Z",
+            "updatedAt": "2022-11-11T04:48:46.222Z",
+            "__v": 0
+        },
+        {
+            "workloadCapacityDefault": {
+                "value": 7,
+                "measurement": "Hours"
+            },
+            "_id": "636dd4f8609ac90f8426c142",
+            "name": "PT Semoga Sukses Selalu ",
+            "desc": "Selamat Mengerjakan Big Project",
+            "logo": "/public/images/company-default.png",
+            "admins": [{
+                "_id": "633fddd364aa3fb18abb4bc4",
+                "fullName": "Sandi Kurnia",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0ZOHhoqZ9_iRXC40H8IFc6L_4_8mFP0PQuIWI6=s96-c"
+            }],
+            "membersJoined": [{
+                "member": "633fddd364aa3fb18abb4bc4",
+                "joinedAt": "2022-11-11T04:52:08.504Z",
+                "_id": "636dd4f8609ac90f8426c143"
+            }],
+            "members": [{
+                "_id": "633fddd364aa3fb18abb4bc4",
+                "fullName": "Sandi Kurnia",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0ZOHhoqZ9_iRXC40H8IFc6L_4_8mFP0PQuIWI6=s96-c",
+                "bio": "",
+                "status": ""
+            }],
+            "teams": [],
+            "createdAt": "2022-11-11T04:52:08.506Z",
+            "updatedAt": "2022-11-11T04:52:08.506Z",
+            "__v": 0
+        }]
+    }]
+}

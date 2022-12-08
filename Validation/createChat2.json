@@ -1,0 +1,32 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+    ],
+    "properties": {
+        "content": {
+            "type": "string",
+            "default": "",
+            "title": "The content Schema",
+            "examples": [
+                "\u003cp\u003eSemangat Big Project !!\u003c/p\u003e"
+            ]
+        },
+        "mentionedUsers": {
+            "type": "array",
+            "default": [],
+            "title": "The mentionedUsers Schema",
+            "items": {},
+            "examples": [
+                []
+            ]
+        }
+    },
+    "examples": [{
+        "content": "\u003cp\u003eSemangat Big Project !!\u003c/p\u003e",
+        "mentionedUsers": []
+    }]
+}

@@ -1,0 +1,371 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "default": {},
+  "required": [
+      
+  ],
+  "properties": {
+      "companies": {
+          "type": "array",
+          "default": [],
+          "items": {
+              "type": "object",
+              "default": {},
+              "required": [
+                  "workloadCapacityDefault",
+                  "_id",
+                  "logo",
+                  "admins",
+                  "members",
+                  "teams",
+                  "name",
+                  "desc",
+                  "membersJoined",
+                  "createdAt",
+                  "updatedAt",
+                  "__v"
+              ],
+              "properties": {
+                  "workloadCapacityDefault": {
+                      "type": "object",
+                      "default": {},
+                      "required": [
+                          "value",
+                          "measurement"
+                      ],
+                      "properties": {
+                          "value": {
+                              "type": "integer",
+                              "default": 0
+                          },
+                          "measurement": {
+                              "type": "string",
+                              "default": ""
+                          }
+                      }
+                  },
+                  "_id": {
+                      "type": "string",
+                      "default": ""
+                  },
+                  "logo": {
+                      "type": "string",
+                      "default": ""
+                  },
+                  "admins": {
+                      "type": "array",
+                      "default": [],
+                      "items": {
+                          "type": "object",
+                          "default": {},
+                          "required": [
+                             
+                              "_id",
+                              "googleId",
+                              "email",
+                              "fullName",
+                              "photoUrl",
+                              "bio",
+                              "status",
+                              "createdAt",
+                              "updatedAt",
+                              "__v"
+                          ],
+                          "properties": {
+                             
+                              "_id": {
+                                  "type": "string",
+                                  "default": ""
+                              }
+                              },
+                              "googleId": {
+                                  "type": "string",
+                                  "default": ""
+                              },
+                              "email": {
+                                  "type": "string",
+                                  "default": ""
+                              },
+                              "fullName": {
+                                  "type": "string",
+                                  "default": ""
+                              },
+                              "photoUrl": {
+                                  "type": "string",
+                                  "default": ""
+                              },
+                              "bio": {
+                                  "type": "string",
+                                  "default": ""
+                              },
+                              "status": {
+                                  "type": "string",
+                                  "default": ""
+                              },
+                              "createdAt": {
+                                  "type": "string",
+                                  "default": ""
+                              },
+                              "updatedAt": {
+                                  "type": "string",
+                                  "default": ""
+                              },
+                              "__v": {
+                                  "type": "integer",
+                                  "default": 0
+                              }
+                          }
+                      }
+                  },
+                  "members": {
+                      "type": "array",
+                      "default": [],
+                      "items": {
+                          "type": "object",
+                          "required": [
+                              
+                              "_id",
+                              "googleId",
+                              "email",
+                              "fullName",
+                              "photoUrl",
+                              "bio",
+                              "status",
+                              "createdAt",
+                              "updatedAt",
+                              "__v"
+                          ],
+                          "properties": {
+                             
+                              "_id": {
+                                  "type": "string"
+                              },
+                              "defaultCompany": {
+                                  "type": "string"
+                              },
+                              "googleId": {
+                                  "type": "string"
+                              },
+                              "email": {
+                                  "type": "string"
+                              },
+                              "fullName": {
+                                  "type": "string"
+                              },
+                              "photoUrl": {
+                                  "type": "string"
+                              },
+                              "bio": {
+                                  "type": "string"
+                              },
+                              "status": {
+                                  "type": "string"
+                              },
+                              "createdAt": {
+                                  "type": "string"
+                              },
+                              "updatedAt": {
+                                  "type": "string"
+                              },
+                              "__v": {
+                                  "type": "integer"
+                              }
+                          }
+                      }
+                  },
+                  "teams": {
+                      "type": "array",
+                      "default": [],
+                      "items": {
+                          "type": "object",
+                          "required": [
+                              "archived",
+                              "_id",
+                              "members",
+                              "boards",
+                              "name",
+                              "desc",
+                              "type",
+                              "createdAt",
+                              "updatedAt",
+                              "__v",
+                              "blast",
+                              "bucket",
+                              "checkIn",
+                              "groupChat",
+                              "schedule"
+                          ],
+                          "properties": {
+                              "archived": {
+                                  "type": "object",
+                                  "required": [
+                                      "status",
+                                      "archivedAt"
+                                  ],
+                                  "properties": {
+                                      "status": {
+                                          "type": "boolean"
+                                      },
+                                      "archivedAt": {
+                                          "type": "string"
+                                      }
+                                  }
+                              },
+                              "_id": {
+                                  "type": "string"
+                              },
+                              "members": {
+                                  "type": "array",
+                                  "items": {
+                                      "type": "object",
+                                      "required": [
+                                          
+                                          "_id",
+                                          
+                                          "googleId",
+                                          "email",
+                                          "fullName",
+                                          "photoUrl",
+                                          "bio",
+                                          "status",
+                                          "createdAt",
+                                          "updatedAt",
+                                          "__v"
+                                      ],
+                                      "properties": {
+                                          "defaultCompany": {
+                                              "type": [
+                                                  "null",
+                                                  "string"
+                                              ]
+                                          },
+                                          "_id": {
+                                              "type": "string"
+                                          }
+                            
+                                          },
+                                          "googleId": {
+                                              "type": "string"
+                                          },
+                                          "email": {
+                                              "type": "string"
+                                          },
+                                          "fullName": {
+                                              "type": "string"
+                                          },
+                                          "photoUrl": {
+                                              "type": "string"
+                                          },
+                                          "bio": {
+                                              "type": "string"
+                                          },
+                                          "status": {
+                                              "type": "string"
+                                          },
+                                          "createdAt": {
+                                              "type": "string"
+                                          },
+                                          "updatedAt": {
+                                              "type": "string"
+                                          },
+                                          "__v": {
+                                              "type": "integer"
+                                          }
+                                      }
+                                  }
+                              },
+                              "boards": {
+                                  "type": "array",
+                                  "items": {
+                                      "type": "string"
+                                  }
+                              },
+                              "name": {
+                                  "type": "string"
+                              },
+                              "desc": {
+                                  "type": "string"
+                              },
+                              "type": {
+                                  "type": "string"
+                              },
+                              "createdAt": {
+                                  "type": "string"
+                              },
+                              "updatedAt": {
+                                  "type": "string"
+                              },
+                              "__v": {
+                                  "type": "integer"
+                              },
+                              "blast": {
+                                  "type": "string"
+                              },
+                              "bucket": {
+                                  "type": "string"
+                              },
+                              "checkIn": {
+                                  "type": "string"
+                              },
+                              "groupChat": {
+                                  "type": "string"
+                              },
+                              "schedule": {
+                                  "type": "string"
+                              }
+                          }
+                      }
+                  },
+                  "name": {
+                      "type": "string",
+                      "default": ""
+                  },
+                  "desc": {
+                      "type": "string",
+                      "default": ""
+                  },
+                  "membersJoined": {
+                      "type": "array",
+                      "default": [],
+                      "items": {
+                          "type": "object",
+                          "default": {},
+                          "required": [
+                              "member",
+                              "joinedAt",
+                              "_id"
+                          ],
+                          "properties": {
+                              "member": {
+                                  "type": "string",
+                                  "default": ""
+                              },
+                              "joinedAt": {
+                                  "type": "string",
+                                  "default": ""
+                              },
+                              "_id": {
+                                  "type": "string",
+                                  "default": ""
+                              }
+                          }
+                      }
+                  },
+                  "createdAt": {
+                      "type": "string",
+                      "default": ""
+                  },
+                  "updatedAt": {
+                      "type": "string",
+                      "default": ""
+                  },
+                  "__v": {
+                      "type": "integer",
+                      "default": 0
+                  }
+              }
+          }
+      }
+  
